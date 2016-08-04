@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dimen">mdpi</string>
+
+    <!--activity_sign_in-->
+    <dimen name="sign_in_img_panel">230dp</dimen>
+
+
+    <dimen name="text_small">11sp</dimen>
+    <dimen name="text_normal">15sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_extra_large">20sp</dimen>
+    <dimen name="profile_header_lyt">300dp</dimen>
+
+
+    <!--SVG-->
+    <dimen name="app_icon">48px</dimen>
+    <dimen name="action_bar">32px</dimen>
+    <dimen name="small_contextual">16px</dimen>
+    <dimen name="notification">24px</dimen>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="orange">#FF3909</color>
+    <color name="colorAccentDark">#00B482</color>
+
+    <color name="colorBlack">#555555</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#707070</color>
+    <color name="colorGreyLight">#8A8A8A</color>
+
+    <color name="light_red">#f8b9c9</color>
+    <color name="blue">#0D2E82</color>
+    <color name="hint_grey">#E0E0E0</color>
+    <color name="back_grey">#B5B5B5</color>
+
+
+    <!---->
+    <color name="view_line">#959595</color>
+    <color name="view_color">#DDDDDD</color>
+    <color name="cycn">#ADADAD</color>
+
+    <color name="transparent">#00000000</color>
+    <item name="fab_normal" type="color">#FF33B5E5</item>
+    <item name="fab_pressed" type="color">#6dc6e7</item>
+    <item name="fab_ripple" type="color">#4133b5e5</item>
+
+</resources>

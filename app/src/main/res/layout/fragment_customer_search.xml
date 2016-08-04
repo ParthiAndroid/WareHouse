@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/edt_search_item"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/close_lyt"
+                android:background="@null"
+                android:hint=""
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/text_normal" />
+
+            <RelativeLayout
+                android:id="@+id/search_lyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_search"
+                    android:layout_width="@dimen/small_contextual"
+                    android:layout_height="@dimen/small_contextual"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/search" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/close_lyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/search_lyt"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="@dimen/small_contextual"
+                    android:layout_height="@dimen/small_contextual"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/close" />
+
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/edt_search_item"
+                android:background="@color/view_line" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="5dp">
+
+            <Spinner
+                android:id="@+id/spn_search_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <!---->
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_sidearrow"
+                android:layout_width="@dimen/notification"
+                android:layout_height="@dimen/notification"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:visibility="gone"
+                app:srcCompat="@drawable/dropdown" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/spn_search_type"
+                android:background="@color/view_line" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/customer_data_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/customer_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue">
+
+    <!--author : Parthi-->
+    <!--Last Updated : 07-20-2016 3:36 PM-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/splash_img_width"
+                android:layout_height="@dimen/splash_img_width"
+                android:contentDescription="@null"
+                android:src="@drawable/app_logo" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/splash_margin_left"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/txt_classic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classic"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/splash_large_font" />
+
+            <TextView
+                android:id="@+id/txt_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/app_lable"
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
